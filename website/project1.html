@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Arduino SpiderBot V1| Gaspar Montoya</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html#Personal Projects">Back to Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="project-detail">
+    <section class="project-header">
+      <h1>Arduino SpiderBot V1</h1>
+      <p class="project-tags">Arduino • C++ • IR Sensors • 3D Printing</p>
+    </section>
+
+   <!--  Gallery -->
+<section class="project-media-gallery">
+    <div class="gallery-grid">
+  
+      <!-- Image 1 -->
+      <div class="media-item">
+        <img src="assets/spiderprototype.jpg" alt="Robot angle 1">
+      </div>
+  
+      <!-- Image 2 -->
+      <div class="media-item">
+        <img src="assets/spiderhead.jpg" alt="Robot angle 2">
+      </div>
+  
+      <!-- Video 1 -->
+      <div class="media-item">
+        <video controls>
+          <source src="assets/RobotStanding.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+  
+      <!-- Image 3 -->
+      <div class="media-item">
+        <img src="assets/spiderback.jpg" alt="Robot build process">
+      </div>
+  
+      <!-- Video 2 -->
+      <div class="media-item">
+        <video controls>
+          <source src="assets/RobotTesting.mp4" type="video/mp4">
+          Your browser does not support the video tag.
+        </video>
+      </div>
+  
+    </div>
+  </section>
+  
+
+    <section class="project-description">
+      <h2>Project Overview</h2>
+      <p>
+        I built a Bluetooth-controlled "spider" robot with four legs and 12 SG90 servo motors, 
+        each leg having 3 degrees of freedom. I used an Arduino Uno for control, a PCA9685 16-channel servo driver, 
+        and a DSD TECH HC-05 Bluetooth module for wireless communication. The power is managed through an 
+        voltage regulator board which is used to distribute the correct volatage and current to all of the components. 
+        I designed the chassis and leg parts in Tinkercad, sliced 
+        them in Cura, and 3D printed everything using PLA. The chassis was made to fit all electronics with extra space 
+        for future upgrades like sensors. I wired the system with jumper cables and wrote the code in Arduino C++.
+      </p>
+
+      <h2>Key Features</h2>
+      <ul>
+        <li>Real-time Bluetooth comminication</li>
+        <li>Custom 3D-printed frame and motor mounts</li>
+        <li>Capability for future upgrades</li>
+        <li>Modular design for easy upgrades (e.g., obstacle avoidance)</li>
+      </ul>
+
+      <h2>What I Learned</h2>
+      <p>
+        Through this project, I learned a lot about design and Hardware compatibility. 
+        I figured out how to properly feed power to different components and understood the importance of stable voltage, 
+        especially when running multiple servos. I genuinely learned how capacitors work and why they're used to smooth out 
+        power fluctuations. I also gained a better understanding of what it means for components to be connected in series, 
+        and how that affects current flow. On the mechanical side, I learned how to prototype and adjust 3D models for accurate 
+        printing, making sure everything fits and functions as intended. Finally, this project pushed me to write better, more 
+        efficient C++ code for controlling multiple motors and handling Bluetooth communication.
+      </p>
+
+      <!-- <a href="https://github.com/yourusername/project1" class="btn" target="_blank">View GitHub Repo</a> -->
+    </section>
+  </main>
+</body>
+</html>

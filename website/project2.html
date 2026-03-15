@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>IR-Controlled Robotic Car| Gaspar Montoya</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html#Personal Projects">Back to Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="project-detail">
+    <section class="project-header">
+      <h1>Infrared sensor Remote Vehicle</h1>
+      <p class="project-tags">Arduino • C++ • IR Sensors • 3D Printing</p>
+    </section>
+
+   <!-- Media Gallery -->
+<section class="project-media-gallery">
+    <div class="gallery-grid">
+  
+      <!-- Image 1 -->
+      <div class="media-item">
+        <img src="assets/car wiring.jpg" alt="Robot angle 1">
+      </div>
+  
+      <!-- Image 2 -->
+      <div class="media-item">
+        <img src="assets/carThumbanil.jpg" alt="Robot angle 2">
+      </div>
+  
+  
+    </div>
+  </section>
+  
+
+    <section class="project-description">
+      <h2>Project Overview</h2>
+      <p>
+        This is a 4-wheel robotic car I built to learn motor control and sensor integration using Arduino. 
+        It’s powered by an Arduino Uno and uses an L298N motor driver to control four TT gear motors. The car is controlled 
+        through an IR sensor, which reads input from an IR remote to move the car forward, backward, left, or right. I designed 
+        and 3D printed a custom casing to mount and protect the IR sensor on the chassis. Power is supplied through a rechargeable 
+        battery pack, and all components are mounted on a flat board I cut and drilled to fit the layout. Jumper wires connect 
+        all modules, and I wrote the control code in Arduino C++. The goal of this project was to build a fully functional 
+        remote-controlled car while learning about motor drivers, sensor input, and embedded system design.
+      </p>
+
+      <h2>Key Features</h2>
+      <ul>
+        <li>IR remote control using IR sensor module</li>
+        <li>Motor direction and speed controlled with PWM</li>
+        <li>4-wheel drive using TT gear motors</li>
+        <li>3D-printed casing for sensor protection</li>
+      </ul>
+
+      <h2>What I Learned</h2>
+      <p>
+        I learned how infrared communication works and how each button on an 
+        IR remote sends a unique hexadecimal code. I used these hex values in my code 
+        to assign commands to each button, allowing the car to respond with specific movements. 
+        I also learned how to wire and control motors using an H-bridge, how to use PWM for speed control, 
+        and how to manage power using a battery pack. This project improved my understanding of sensor input, 
+        real-time response programming, and gave me hands-on experience with hardware prototyping and C++.
+      </p>
+
+      <!-- <a href="https://github.com/yourusername/project1" class="btn" target="_blank">View GitHub Repo</a> -->
+    </section>
+  </main>
+</body>
+</html>

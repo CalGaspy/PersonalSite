@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Research Projects | Gaspar Montoya</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+   <!-- Navbar -->
+   <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html#about">Home</a></li>
+        <li><a href="index.html#timeline">Experience</a></li>
+        <li><a href="index.html#Personal Projects">Projects</a></li>
+        <li><a href="contactme.html">Contact</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <!-- Page Title -->
+  <section class="page-header">
+    <h1>Research Portfolio</h1>
+   
+        As of right now, my work focuses on robotics, electronics, UAV systems, 
+        and computer hardware engineering.</p>
+  </section>
+
+     <!-- project 1 -->
+     <section class="research-entry">
+           
+      <div class="media-wrapper">
+        <img src="assets/mainDrone.jpg" alt="Energy AI Project" />
+      </div>
+    
+      <!-- Text -->
+      <div class="text-content">
+        <h2>Multi-Sensor UAV (Dual Payload)</h2>
+        <p>This drone is a custom-built dual-sensor platform designed specifically 
+          for wildfire data collection. It carries a FLIR Vue Pro R thermal camera and an Altum PT 
+          multispectral sensor, giving me the ability to capture both heat signatures and detailed spectral 
+          information during flights. I designed the entire camera mounting plate in SolidWorks and 3D-printed 
+          it in lightweight PLA so the system stays stable without adding unnecessary weight. The drone runs on an OrangeCube 
+          flight controller, which handles stabilization, navigation, and autonomous flight paths. I’ve already used this setup
+           to collect high-resolution thermal and multispectral imagery over burn sites, allowing me to study fire behavior, 
+           vegetation conditions, and post-fire environmental changes with much greater detail.</p>
+       
+          <p><strong>What I Learned</strong> Through this project, I gained extensive 
+            hands-on experience working with UAVs, from flight controller setup to payload 
+            integration. Designing the camera mounting plate pushed me deeper into the mechanical 
+            engineering side of things I spent a lot of time iterating in SolidWorks, testing fits, 
+            and refining a structure that was both lightweight and strong, which really sharpened my design 
+            and prototyping skills. I also learned how to integrate self-triggering sensors into a UAV workflow, 
+            making sure the FLIR and Altum PT could operate reliably during autonomous missions. Most importantly, 
+            I learned how to apply my own custom-built instrument within a larger scientific research effort as part of the HDRFS program, 
+            contributing meaningful data and gaining real experience in field-based environmental research.</p>
+    
+        <div class="research-tags">
+          <span class="tag">3D - Design</span>
+          <span class="tag">QgroundControl</span>
+          <span class="tag">SolidWorks</span>
+          <span class="tag">Mission Planner</span>
+        </div>
+      </div>
+    
+      <!-- Media Gallery Below Text -->
+      <div class="media-gallery">
+        <img src="assets/dronesideprofile.jpg" alt="Chart 1" />
+        <img src="assets/DataCaptured.jpg" alt="Chart 1" />
+        <img src="assets/Droneonpad.jpg" alt="Chart 1" />
+        <img src="assets/fireOne.jpg" alt="Chart 1" />
+        <img src="assets/fireTwo.jpg" alt="Chart 1" />
+        <video controls>
+          <source src="assets/droneinflight.mp4" type="video/mp4" />
+        </video>
+      </div>
+</section>
+    
+    <!-- project 2 -->
+    <section class="research-entry">
+      <!-- FLOATED THUMBNAIL (beside text) -->
+      <div class="media-wrapper">
+        <img src="assets/scanner.jpg" alt="Main project image" />
+      </div>
+    
+    <div class="text-content">
+      <h2>Motorized 3-Axis Camera Gantry</h2>
+      <p>I worked to the full design and setup of this 3-axis camera gantry system. I used UIM5756CM stepper 
+        motors with FUYU linear rail modules to control precise movement along the X, Y, and Z axes. To protect the system, 
+        I implemented mechanical limit switches on each axis and designed custom Acrylic strikers I cut and shapped to ensure the motors stopped 
+        before reaching the physical limits. I soldered custom cable extensions, wired all components in series, and organized the 
+        wiring using terminal blocks. The entire system runs on a regulated power supply that provides the correct voltage and current 
+        to safely drive all motors. Communication with the motors is handled through a 2523UIM gateway over Ethernet, allowing stable 
+        and accurate control from a remote interface.</p>
+
+        <p><strong>What I learned:</strong>This project gave me hands-on
+             experience with building a full motion control system from scratch. 
+             I used the 2523UIM gateway to control stepper motors over Ethernet and 
+             learned how to properly wire high-power components by soldering custom 
+             cable extensions, wiring everything in series, and organizing connections 
+             with terminal blocks. I also matched the power supply to the motors to ensure
+              stable voltage and current. To prevent overtravel, I installed mechanical limit 
+              switches on each axis and designed custom acrylic strikers by cutting and shaping
+               them myself. This process taught me a lot about hardware integration, safe motion 
+               control, and combining electronics with mechanical design.
+            </p>
+          <div class="research-tags">
+        <span class="tag">StepEva3</span>
+        <span class="tag">Stepper Motors</span>
+        <span class="tag">C++</span>
+        <span class="tag">CAN Bus</span>
+        <span class="tag">Soldering</span>
+        <span class="tag">Designer</span>
+      </div>
+    </div>
+    <!-- project pic 1 -->
+    <div class="media-gallery">
+      <img src="assets/scanner3.jpg" alt="Build photo 2" />
+      <video controls>
+        <source src="assets/vidscan.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+
+      <video controls>
+        <source src="assets/scannervid.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+      </video>
+      <img src="assets/scanner4.jpg" alt="Build photo 2" /> 
+    </div>
+<!-- project 3 -->
+    <section class="research-entry">
+        <div class="media-wrapper">
+          <img src="assets/dronepic.jpg" alt="Energy AI Project" />
+        </div>
+      
+        <!-- Text -->
+        <div class="text-content">
+          <h2>Hexacopter Project equiped with GoPro camera system </h2>
+          <p>This is a custom hexacopter I assembled in my lab under the mentorship of PhD student Chetna Dehal. 
+            The frame is made of carbon fiber, with six T-Motor Antigravity MN601-S brushless motors, each connected 
+            to their respective ESCs. Power is distributed through a high-current power distribution board with XT60 
+            connectors soldered directly to the main leads. The flight controller used is an OrangeCube (Pixhawk 2.1), 
+            mounted at the center of the frame for stable control. The drone includes a GPS module for navigation, a 
+            telemetry radio for ground communication, and a GoPro Hero4 mounted on the front for video capture. Each motor 
+            lead was terminated with bullet connectors and insulated with heat shrink tubing. The wiring was organized through 
+            the frame and tested individually before full system integration.</p>
+         
+            <p><strong>What I learned:</strong>In this project, I learned 
+                how to assemble a hexacopter from the ground up using components 
+                like the OrangeCube (Pixhawk 2.1) flight controller, T-Motor MN601-S motors, 
+                ESCs, GPS, and a telemetry radio. I soldered XT60 connectors and bullet leads, 
+                wired the power distribution board, and calibrated each ESC for proper motor sync. 
+                I set up the flight controller, connected all peripherals, and troubleshot power and 
+                signal issues during integration. I also configured onboard video streaming using a 
+                GoPro Hero4, enabling live camera feed during flight testing.</p>
+      
+          <div class="research-tags">
+            <span class="tag">Soldering</span>
+            <span class="tag">QgroundControl</span>
+            <span class="tag">OrangeCube Flight Controller</span>
+            <span class="tag">Embedded systems</span>
+          </div>
+        </div>
+      
+        <!-- Media Gallery Below Text -->
+        <div class="media-gallery">
+          <img src="assets/droneview.jpg" alt="Chart 1" />
+          <img src="assets/dronecamera.jpg" alt="Turbine Chart" />
+          <img src="assets/droneframe.jpg" alt="Turbine Chart" />
+          <img src="assets/circuitsoldering.jpg" alt="Turbine Chart" />
+          <img src="assets/dronemotor.jpg" alt="Turbine Chart" />
+          <video controls>
+            <source src="assets/droneflying.mp4" type="video/mp4" />
+          </video>
+        </div>
+
+  
+  
