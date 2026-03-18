@@ -24,11 +24,73 @@
   <section class="page-header">
     <h1>Research Portfolio</h1>
    
-        As of right now, my work focuses on robotics, electronics, UAV systems, 
-        and computer hardware engineering.</p>
+        As of now my work focuses on implemented embedded systems and hardware engineering.</p>
   </section>
 
-     <!-- project 1 -->
+   <!-- project 1 -->
+     <section class="research-entry">
+           
+      <div class="media-wrapper">
+        <img src="assets/M600_test.jpg" alt="Energy AI Project" />
+      </div>
+    
+      <!-- Text -->
+      <div class="text-content">
+        <h2>Embedded Multisensor UAV Imaging System for Environmental Monitoring</h2>
+        <p>This project is an embedded systems project that controls and coordinates 
+          multiple devices on a drone. The main controller is a Raspberry Pi 4, 
+          which acts as the onboard computer for the system. It receives commands 
+          from a laptop ground station through a radio link and then sends the correct 
+          electrical signals to trigger a thermal camera and a multispectral camera during 
+          flight. The Raspberry Pi also collects GPS data, including position and time, and
+           saves that information each time an image is captured. This makes it possible to 
+           match each image with where and when it was taken. In addition to the software, 
+           the project includes power regulation, communication between onboard and ground 
+           hardware, and custom 3D-printed mounts to hold the cameras and electronics securely 
+           on the drone. This project shows embedded systems skills in hardware and software 
+           integration, sensor control, wireless communication, GPIO and PWM signal use, and 
+           real-time data logging. The full system was designed to support real-world tasks such
+            as wildfire monitoring, vegetation analysis, and other forms of environmental sensing.</p>
+       
+          <p><strong>What I Learned: </strong>Through this project, I learned how to 
+            work with a Raspberry Pi in much more detail, starting from installing the 
+            operating system and setting up the board to running my own Python code on it. 
+            I also learned how to install and use important Python libraries, such as pymavlink, 
+            to communicate with the radios and send commands between the ground station and the 
+            drone system. On the hardware side, I learned how to use GPIO pins and PWM signals 
+            with duty cycles to control devices like the cameras. I also learned how important it 
+            is to correctly geotag images and keep the GPS data in sync with the camera trigger 
+            pulses so that the collected data is accurate and useful. In addition, I learned how 
+            to design 3D-printed parts that are lightweight but still strong enough to hold the 
+            system securely, since keeping the mounts light helps improve flight time and overall 
+            drone performance.</p>
+    
+        <div class="research-tags">
+          <span class="tag">Mavlink</span>
+          <span class="tag">Python</span>
+          <span class="tag">Raspberry PI 4</span>
+          <span class="tag">Radio Communication</span>
+          <span class="tag">RTK GPS System</span>
+         <a href="https://github.com/CalGaspy/Thermal-Multi-Spectral-Research-Project" class="tag" target="_blank">View GitHub Repo</a>
+        </div>
+      </div>
+    
+      <!-- Media Gallery Below Text -->
+      <div class="media-gallery">
+        <img src="assets/M600 project diagram.png" alt="Chart 1" />
+        <img src="assets/Mount_front_image.jpg" alt="Chart 1" />
+        <img src="assets/Mount_image.jpg" alt="Chart 1" />
+        <img src="assets/Mount_Back_image.jpg" alt="Chart 1" />
+        <img src="assets/MultiSpectral_M600.jpg" alt="Chart 1" />
+        <img src="assets/M600_thermal.JPG" alt="Chart 1" />
+        <img src="assets/M600Closelook.jpg" alt="Chart 1" />
+        <video controls>
+          <source src="assets/M600Flying.mp4" type="video/mp4" />
+        </video>
+      </div>
+</section>
+
+     <!-- project 2 -->
      <section class="research-entry">
            
       <div class="media-wrapper">
@@ -47,7 +109,7 @@
            to collect high-resolution thermal and multispectral imagery over burn sites, allowing me to study fire behavior, 
            vegetation conditions, and post-fire environmental changes with much greater detail.</p>
        
-          <p><strong>What I Learned</strong> Through this project, I gained extensive 
+          <p><strong>What I Learned: </strong> Through this project, I gained extensive 
             hands-on experience working with UAVs, from flight controller setup to payload 
             integration. Designing the camera mounting plate pushed me deeper into the mechanical 
             engineering side of things I spent a lot of time iterating in SolidWorks, testing fits, 
@@ -78,7 +140,7 @@
       </div>
 </section>
     
-    <!-- project 2 -->
+    <!-- project 3 -->
     <section class="research-entry">
       <!-- FLOATED THUMBNAIL (beside text) -->
       <div class="media-wrapper">
@@ -129,51 +191,7 @@
       </video>
       <img src="assets/scanner4.jpg" alt="Build photo 2" /> 
     </div>
-<!-- project 3 -->
-    <section class="research-entry">
-        <div class="media-wrapper">
-          <img src="assets/dronepic.jpg" alt="Energy AI Project" />
-        </div>
-      
-        <!-- Text -->
-        <div class="text-content">
-          <h2>Hexacopter Project equiped with GoPro camera system </h2>
-          <p>This is a custom hexacopter I assembled in my lab under the mentorship of PhD student Chetna Dehal. 
-            The frame is made of carbon fiber, with six T-Motor Antigravity MN601-S brushless motors, each connected 
-            to their respective ESCs. Power is distributed through a high-current power distribution board with XT60 
-            connectors soldered directly to the main leads. The flight controller used is an OrangeCube (Pixhawk 2.1), 
-            mounted at the center of the frame for stable control. The drone includes a GPS module for navigation, a 
-            telemetry radio for ground communication, and a GoPro Hero4 mounted on the front for video capture. Each motor 
-            lead was terminated with bullet connectors and insulated with heat shrink tubing. The wiring was organized through 
-            the frame and tested individually before full system integration.</p>
-         
-            <p><strong>What I learned:</strong>In this project, I learned 
-                how to assemble a hexacopter from the ground up using components 
-                like the OrangeCube (Pixhawk 2.1) flight controller, T-Motor MN601-S motors, 
-                ESCs, GPS, and a telemetry radio. I soldered XT60 connectors and bullet leads, 
-                wired the power distribution board, and calibrated each ESC for proper motor sync. 
-                I set up the flight controller, connected all peripherals, and troubleshot power and 
-                signal issues during integration. I also configured onboard video streaming using a 
-                GoPro Hero4, enabling live camera feed during flight testing.</p>
-      
-          <div class="research-tags">
-            <span class="tag">Soldering</span>
-            <span class="tag">QgroundControl</span>
-            <span class="tag">OrangeCube Flight Controller</span>
-            <span class="tag">Embedded systems</span>
-          </div>
-        </div>
-      
-        <!-- Media Gallery Below Text -->
-        <div class="media-gallery">
-          <img src="assets/droneview.jpg" alt="Chart 1" />
-          <img src="assets/dronecamera.jpg" alt="Turbine Chart" />
-          <img src="assets/droneframe.jpg" alt="Turbine Chart" />
-          <img src="assets/circuitsoldering.jpg" alt="Turbine Chart" />
-          <img src="assets/dronemotor.jpg" alt="Turbine Chart" />
-          <video controls>
-            <source src="assets/droneflying.mp4" type="video/mp4" />
-          </video>
+      <!-- Next project -->
         </div>
 
   

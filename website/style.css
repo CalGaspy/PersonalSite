@@ -596,27 +596,31 @@ body {
   }
   
   /* Floated first image */
-  .media-wrapper {
-    float: left;
-    width: 280px;
-    margin-right: 2rem;
-    margin-bottom: 1rem;
-  }
-  
-  .media-wrapper img {
-    width: 100%;
-    max-width: 600px;
-    height: auto;
-    border-radius: 10px;
-    object-fit: cover;
-    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
-  }
-  
-  
-  /* Main text section */
-  .text-content {
-    overflow: hidden;
-  }
+ 
+.media-wrapper {
+  float: left;
+  width: 500px;
+  max-width: 100%;
+  margin-right: 2rem;
+  margin-bottom: 1rem;
+}
+
+.media-wrapper img {
+  display: block;
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.text-content h2 {
+  margin-top: 0;
+}
+
+.what-i-learned {
+  clear: both;
+  margin-top: 1.5rem;
+}
   
   .text-content h2 {
     font-size: 1.6rem;
