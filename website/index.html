@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Gaspar Montoya | Portfolio</title>
     <link rel="stylesheet" href="style.css" />
+    <script src="nav.js" defer></script>
 </head>
 
 <body>
@@ -16,6 +17,10 @@
             <div class="logo">
                 <img src="assets/mylogo2.png" alt="Gaspar J. Montoya Logo">
             </div>
+            <input type="checkbox" id="nav-toggle" class="nav-toggle" />
+            <label for="nav-toggle" class="nav-toggle-label" aria-label="Open navigation menu">
+                <span></span><span></span><span></span>
+            </label>
             <ul class="nav-links">
                 <li><a href="#Home">Home</a></li>
                 <li><a href="#Personal Projects">Projects</a></li>
@@ -55,8 +60,11 @@
             </div>
 
             <div class="hero-buttons">
-                <a href="assets/Gaspar-Montoya-CV.pdf" class="hero-button">
+                <a href="assets/Montoya-Gaspar-CV-summer-26.pdf" class="hero-button">
                     Download My CV
+                </a>
+                <a href="assets/Montoya-Gaspar-Resume-Summer-26.pdf" class="hero-button">
+                    Download My Resume
                 </a>
             </div>
         </div>
@@ -292,6 +300,12 @@
         <p>Explore some of the engineering and software work I've done.</p>
     </div>
 
+    <!-- Hardware Projects -->
+    <div class="category-title">
+        <h3>Hardware Projects</h3>
+        <p>Embedded systems, circuits, and things I built with my hands.</p>
+    </div>
+
     <div class="project-grid">
         <!-- Project 1 -->
         <div class="project-card">
@@ -316,20 +330,6 @@
                 <span class="tag">ATmega328PB</span>
                 <span class="tag">DC Motors</span>
                 <a href="project2.html" class="card-link">View More</a>
-            </div>
-        </div>
-        <!-- Project 3 -->
-        <div class="project-card">
-            <img src="assets/numlogo.png" alt="Project 3 Thumbnail" />
-            <div class="card-content">
-                <h3>Handwritten Digit Recognition - Machine Learning Project</h3>
-                <p>Built a Handwritting Recognition machine learning model using the MNIST Data set using tensorFlow.
-                </p>
-                <span class="tag">Python</span>
-                <span class="tag">TensorFlow</span>
-                <span class="tag">OpenCV</span>
-                <span class="tag">Numpy</span>
-                <a href="project4.html" class="card-link">View More</a>
             </div>
         </div>
         <!-- Project 4 -->
@@ -363,12 +363,36 @@
             <img src="assets/arduinoradar2.jpg" alt="Project 6 thumbnail"/>
             <div class="card-content">
                 <h3>Arduino Radar System</h3>
-                <p>I Built a radar system using an Arduino Mega and a micro servo motor. I used a UltraSonic sensor to detect 
+                <p>I Built a radar system using an Arduino Mega and a micro servo motor. I used a UltraSonic sensor to detect
                     nearby items.  </p>
                 <span class="tag">Arduino</span>
                 <span class="tag">Servor Motor</span>
                 <span class="tag">UltraSonic Sensors</span>
                 <a href="project6.html" class="card-link">View More</a>
+            </div>
+        </div>
+
+    </div>
+
+    <!-- Software Projects -->
+    <div class="category-title">
+        <h3>Software Projects</h3>
+        <p>Machine learning models, computer vision, and data-driven work.</p>
+    </div>
+
+    <div class="project-grid">
+        <!-- Project 3 -->
+        <div class="project-card">
+            <img src="assets/numlogo.png" alt="Project 3 Thumbnail" />
+            <div class="card-content">
+                <h3>Handwritten Digit Recognition - Machine Learning Project</h3>
+                <p>Built a Handwritting Recognition machine learning model using the MNIST Data set using tensorFlow.
+                </p>
+                <span class="tag">Python</span>
+                <span class="tag">TensorFlow</span>
+                <span class="tag">OpenCV</span>
+                <span class="tag">Numpy</span>
+                <a href="project4.html" class="card-link">View More</a>
             </div>
         </div>
         <!-- Project 7 -->
