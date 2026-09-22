@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Quadruped Robot: Walking, Mapping, and Exploration | Gaspar Montoya</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <ul class="nav-links">
+        <li><a href="index.html#Personal Projects">Back to Projects</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <main class="project-detail">
+    <section class="project-header">
+      <h1>Teaching a Quadruped Robot to Walk, Map, and Explore</h1>
+      <p class="project-tags">MuJoCo • Reinforcement Learning • Walking Policy</p>
+    </section>
+
+    <section class="project-media-gallery">
+      <div class="gallery-grid">
+        <div class="media-item">
+          <img src="assets/pepe_front.png" alt="Front view of the quadruped robot" />
+        </div>
+        <div class="media-item">
+          <img src="assets/pepe_back_side.png" alt="Rear side view of the quadruped robot" />
+        </div>
+        <div class="media-item">
+          <video controls preload="metadata" >
+            <source src="assets/walking_gait_1.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+        <div class="media-item">
+          <video controls preload="metadata" >
+            <source src="assets/walking_gait_2.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+       
+        <div class="media-item">
+          <video controls preload="metadata" >
+            <source src="assets/walking_gait_3.mp4" type="video/mp4" />
+            Your browser does not support the video tag.
+          </video>
+        </div>
+
+      </div>
+    </section>
+
+    <section class="project-description">
+      <h2>Project Overview</h2>
+      <p>I'm developing a quadruped robot to explore environments that may be unsafe for people.
+        I trained a walking policy in MuJoCo using reinforcement learning, and the robot now walks
+        forward in simulation. Next, I plan to add mapping and autonomous exploration.</p>
+
+      <h2>Key Features</h2>
+      <ul>
+        <li>MuJoCo quadruped simulation</li>
+        <li>PPO walking policy trained with JAX</li>
+        <li>Gait evaluation using speed, stability, and foot-contact data</li>
+      </ul>
+
+      <h2>What I Learned</h2>
+      <p>I started learning MuJoCo and reinforcement learning by configuring the simulation
+        and writing reward and evaluation functions in Python. When a policy tracked speed
+        but favored one diagonal pair, I learned to check foot contact and balance before
+        treating the gait as reliable.</p>
+    </section>
+  </main>
+</body>
+</html>

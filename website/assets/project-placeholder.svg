@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 450" role="img" aria-labelledby="title desc">
+  <title id="title">New hardware project placeholder</title>
+  <desc id="desc">A simple circuit board illustration with space reserved for a future project photo.</desc>
+  <rect width="800" height="450" fill="#e8f0ff"/>
+  <g fill="none" stroke="#93b4e8" stroke-width="7" stroke-linecap="round" stroke-linejoin="round">
+    <path d="M0 125h205l65 65h90M800 105H590l-60 60h-90M0 350h185l65-65h110M800 325H610l-70-70H440"/>
+    <circle cx="360" cy="190" r="8" fill="#93b4e8"/>
+    <circle cx="440" cy="165" r="8" fill="#93b4e8"/>
+    <circle cx="360" cy="285" r="8" fill="#93b4e8"/>
+    <circle cx="440" cy="255" r="8" fill="#93b4e8"/>
+  </g>
+  <rect x="245" y="115" width="310" height="220" rx="20" fill="#ffffff" stroke="#2563eb" stroke-width="8"/>
+  <text x="400" y="211" fill="#1e3a8a" font-family="Arial, sans-serif" font-size="30" font-weight="700" text-anchor="middle">New Hardware</text>
+  <text x="400" y="253" fill="#4b5563" font-family="Arial, sans-serif" font-size="22" text-anchor="middle">Project Photo</text>
+</svg>

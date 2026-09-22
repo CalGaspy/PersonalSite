@@ -63,9 +63,31 @@ header {
 }
 
 .navbar .logo {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
     color: #fff;
     font-size: 1.5rem;
     font-weight: bold;
+}
+
+.navbar .logo > img {
+    width: auto;
+    height: 80px;
+    flex-shrink: 1;
+}
+
+.nav-flags {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.3rem;
+    flex-shrink: 0;
+}
+
+.logo .nav-flags img {
+    width: auto;
+    height: 22px;
+    border-radius: 2px;
 }
 
 .nav-links {
@@ -171,6 +193,7 @@ header {
     margin-bottom: 1rem;
     color: #ffffff;
 }
+
 
 .hero-subtitle {
     font-size: 1.1rem;
@@ -581,6 +604,27 @@ header {
     margin-right: 8px;
   }
 
+  .skill-box ul li img.logo.mujoco-logo {
+    width: 120px;
+    height: auto;
+    flex: 0 0 120px;
+  }
+
+  .skill-mark {
+    width: 60px;
+    height: 60px;
+    flex: 0 0 60px;
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 8px;
+    border-radius: 12px;
+    background: #dbeafe;
+    color: #1e3a8a;
+    font-size: 0.9rem;
+    font-weight: 700;
+  }
+
   
 /* Porjects page */
 
@@ -651,6 +695,7 @@ header {
     max-height: 400px;
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
+
 
 /* last section */
 .section-break {
@@ -1140,9 +1185,13 @@ header {
     border-top: 1px solid rgba(249, 250, 251, 0.15);
   }
 
-  .logo img {
-    width: 180px;
+  .navbar .logo > img {
+    width: auto;
     height: 50px;
+  }
+
+  .navbar .logo .nav-flags img {
+    height: 18px;
   }
 
   /* --- Hero --- */
@@ -1344,6 +1393,13 @@ header {
     height: 38px;
   }
 
+  .skill-mark {
+    width: 38px;
+    height: 38px;
+    flex-basis: 38px;
+    font-size: 0.7rem;
+  }
+
   /* --- Closing section --- */
   .section-break {
     height: auto;
@@ -1491,16 +1547,22 @@ header {
     height: 160px;
   }
 
-  .logo img {
-    width: 150px;
+  .navbar .logo > img {
+    width: auto;
     height: 42px;
+  }
+
+  .navbar .logo .nav-flags img {
+    height: 16px;
   }
 
   .skill-box ul li img.logo {
     height: 32px;
   }
+
+  .skill-mark {
+    width: 32px;
+    height: 32px;
+    flex-basis: 32px;
+  }
 }
-
-
-  
-  

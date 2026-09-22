@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
   <title>Autonomous Rover Project | Gaspar Montoya</title>
   <link rel="stylesheet" href="style.css"/>
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 </head>
 <body>
 
@@ -64,16 +65,10 @@
 
     <section class="project-description">
       <h2>Project Overview</h2>
-      <p> For a team class project, I built an autonomous rover 
-        around an ATmega328PB microcontroller. The goal was a standalone 
-        system capable of wireless communication with a laptop. The rover has 
-        two main features: manual control and obstacle avoidance. For manual control, 
-        a laptop connected via radio sends WASD keystrokes to drive the rover forward, 
-        in reverse, left, and right. For obstacle avoidance, an ultrasonic sensor detects 
-        objects within approximately two inches and automatically steers the rover left to maintain a clear path. The 
-        motors use PWM signals to control direction.
-
-      </p>
+      <p>Our team needed a rover that could be driven remotely and avoid nearby obstacles.
+        I built the ATmega328PB-based control system in C, using radio commands for manual
+        driving and an ultrasonic sensor for obstacle detection. The rover steers left when
+        it detects an object about two inches away.</p>
 
       <h2>Key Features</h2>
       <ul>
@@ -83,13 +78,9 @@
       </ul>
 
       <h2>What I Learned</h2>
-      <p>
-        Through this project, I reinforced a range of embedded systems skills 
-        working with DC motors and motor drivers, and writing the C code that drives all of the rover's functionality.
-        I also learned how to work and program ultrasonic sensor, which was a peripheral not taught during the class.
-
-
-      </p>
+      <p>I learned to combine radio commands, PWM motor control, and ultrasonic readings
+        in one embedded C program. Testing both manual driving and obstacle avoidance
+        showed me how sensor input must change the rover's behavior in real time.</p>
 
       <!-- <a href="https://github.com/yourusername/project1" class="btn" target="_blank">View GitHub Repo</a> -->
     </section>

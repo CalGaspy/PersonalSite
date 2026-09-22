@@ -5,6 +5,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Research Projects | Gaspar Montoya</title>
   <link rel="stylesheet" href="style.css" />
+  <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
   <script src="nav.js" defer></script>
 </head>
 <body>
@@ -29,7 +30,7 @@
   <section class="page-header">
     <h1>Research Portfolio</h1>
    
-        As of now my work focuses on implemented embedded systems and hardware engineering.</p>
+    <p>Embedded systems, robotics, and environmental sensing.</p>
   </section>
 
    <!-- project 1 -->
@@ -42,33 +43,15 @@
       <!-- Text -->
       <div class="text-content">
         <h2>Embedded Multisensor UAV Imaging System for Environmental Monitoring</h2>
-        <p>This project is an embedded systems project that controls and coordinates 
-          multiple devices on a drone. The main controller is a Raspberry Pi 4, 
-          which acts as the onboard computer for the system. It receives commands 
-          from a laptop ground station through a radio link and then sends the correct 
-          electrical signals to trigger a thermal camera and a multispectral camera during 
-          flight. The Raspberry Pi also collects GPS data, including position and time, and
-           saves that information each time an image is captured. This makes it possible to 
-           match each image with where and when it was taken. In addition to the software, 
-           the project includes power regulation, communication between onboard and ground 
-           hardware, and custom 3D-printed mounts to hold the cameras and electronics securely 
-           on the drone. This project shows embedded systems skills in hardware and software 
-           integration, sensor control, wireless communication, GPIO and PWM signal use, and 
-           real-time data logging. The full system was designed to support real-world tasks such
-            as wildfire monitoring, vegetation analysis, and other forms of environmental sensing.</p>
+        <p>Environmental monitoring needs thermal and multispectral images tied to a precise
+          location and time. I built a Raspberry Pi 4 controller that receives ground-station
+          commands, triggers both cameras, and logs GPS data with each capture. The integrated
+          system supports geotagged imagery for wildfire and vegetation research.</p>
        
-          <p><strong>What I Learned: </strong>Through this project, I learned how to 
-            work with a Raspberry Pi in much more detail, starting from installing the 
-            operating system and setting up the board to running my own Python code on it. 
-            I also learned how to install and use important Python libraries, such as pymavlink, 
-            to communicate with the radios and send commands between the ground station and the 
-            drone system. On the hardware side, I learned how to use GPIO pins and PWM signals 
-            with duty cycles to control devices like the cameras. I also learned how important it 
-            is to correctly geotag images and keep the GPS data in sync with the camera trigger 
-            pulses so that the collected data is accurate and useful. In addition, I learned how 
-            to design 3D-printed parts that are lightweight but still strong enough to hold the 
-            system securely, since keeping the mounts light helps improve flight time and overall 
-            drone performance.</p>
+          <p><strong>What I Learned:</strong> I learned to configure a Raspberry Pi and use
+            Python with pymavlink to pass commands from the ground station to the UAV.
+            Connecting camera triggers to GPS timestamps showed me why timing matters
+            when imagery needs accurate location data.</p>
     
         <div class="research-tags">
           <span class="tag">Mavlink</span>
@@ -105,24 +88,15 @@
       <!-- Text -->
       <div class="text-content">
         <h2>Multi-Sensor UAV (Dual Payload)</h2>
-        <p>This drone is a custom-built dual-sensor platform designed specifically 
-          for wildfire data collection. It carries a FLIR Vue Pro R thermal camera and an Altum PT 
-          multispectral sensor, giving me the ability to capture both heat signatures and detailed spectral 
-          information during flights. I designed the entire camera mounting plate in SolidWorks and 3D-printed 
-          it in lightweight PLA so the system stays stable without adding unnecessary weight. The drone runs on an OrangeCube 
-          flight controller, which handles stabilization, navigation, and autonomous flight paths. I’ve already used this setup
-           to collect high-resolution thermal and multispectral imagery over burn sites, allowing me to study fire behavior, 
-           vegetation conditions, and post-fire environmental changes with much greater detail.</p>
+        <p>Wildfire research needs thermal and multispectral views of the same burn site.
+          I built a dual-sensor UAV with FLIR and Altum PT cameras, a lightweight printed mount,
+          and an OrangeCube flight controller. The platform collected imagery over burn sites
+          for fire and vegetation analysis.</p>
        
-          <p><strong>What I Learned: </strong> Through this project, I gained extensive 
-            hands-on experience working with UAVs, from flight controller setup to payload 
-            integration. Designing the camera mounting plate pushed me deeper into the mechanical 
-            engineering side of things I spent a lot of time iterating in SolidWorks, testing fits, 
-            and refining a structure that was both lightweight and strong, which really sharpened my design 
-            and prototyping skills. I also learned how to integrate self-triggering sensors into a UAV workflow, 
-            making sure the FLIR and Altum PT could operate reliably during autonomous missions. Most importantly, 
-            I learned how to apply my own custom-built instrument within a larger scientific research effort as part of the HDRFS program, 
-            contributing meaningful data and gaining real experience in field-based environmental research.</p>
+          <p><strong>What I Learned:</strong> I learned to integrate thermal and multispectral
+            cameras with a flight controller for autonomous collection. Iterating on the
+            mount in SolidWorks and using the UAV over burn sites taught me to balance
+            payload stability, weight, and field needs.</p>
     
         <div class="research-tags">
           <span class="tag">3D - Design</span>
@@ -154,25 +128,15 @@
     
     <div class="text-content">
       <h2>Motorized 3-Axis Camera Gantry</h2>
-      <p>I worked to the full design and setup of this 3-axis camera gantry system. I used UIM5756CM stepper 
-        motors with FUYU linear rail modules to control precise movement along the X, Y, and Z axes. To protect the system, 
-        I implemented mechanical limit switches on each axis and designed custom Acrylic strikers I cut and shapped to ensure the motors stopped 
-        before reaching the physical limits. I soldered custom cable extensions, wired all components in series, and organized the 
-        wiring using terminal blocks. The entire system runs on a regulated power supply that provides the correct voltage and current 
-        to safely drive all motors. Communication with the motors is handled through a 2523UIM gateway over Ethernet, allowing stable 
-        and accurate control from a remote interface.</p>
+      <p>Imaging work needed repeatable camera movement across three axes. I built an
+        Ethernet-controlled gantry with stepper motors, linear rails, regulated power,
+        and limit switches. It moves the camera along X, Y, and Z while stopping before
+        the rails' physical limits.</p>
 
-        <p><strong>What I learned:</strong>This project gave me hands-on
-             experience with building a full motion control system from scratch. 
-             I used the 2523UIM gateway to control stepper motors over Ethernet and 
-             learned how to properly wire high-power components by soldering custom 
-             cable extensions, wiring everything in series, and organizing connections 
-             with terminal blocks. I also matched the power supply to the motors to ensure
-              stable voltage and current. To prevent overtravel, I installed mechanical limit 
-              switches on each axis and designed custom acrylic strikers by cutting and shaping
-               them myself. This process taught me a lot about hardware integration, safe motion 
-               control, and combining electronics with mechanical design.
-            </p>
+        <p><strong>What I Learned:</strong> I learned to size a power supply for stepper motors,
+          organize their wiring with terminal blocks, and control movement over Ethernet.
+          Adding limit switches and custom acrylic strikers taught me to build safety
+          into the gantry's mechanical design.</p>
           <div class="research-tags">
         <span class="tag">StepEva3</span>
         <span class="tag">Stepper Motors</span>
@@ -198,6 +162,4 @@
     </div>
       <!-- Next project -->
         </div>
-
-  
   

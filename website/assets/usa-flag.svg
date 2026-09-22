@@ -1,0 +1,20 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 57 30" role="img" aria-label="Flag of the United States">
+  <rect width="57" height="30" fill="#ffffff"/>
+  <path fill="#b22234" d="M0 0h57v2.31H0zM0 4.62h57v2.31H0zM0 9.23h57v2.31H0zM0 13.85h57v2.31H0zM0 18.46h57v2.31H0zM0 23.08h57v2.31H0zM0 27.69h57V30H0z"/>
+  <rect width="23" height="16.16" fill="#3c3b6e"/>
+  <defs>
+    <g id="six" fill="#ffffff">
+      <circle cx="2" r="0.45"/><circle cx="5.7" r="0.45"/><circle cx="9.4" r="0.45"/>
+      <circle cx="13.1" r="0.45"/><circle cx="16.8" r="0.45"/><circle cx="20.5" r="0.45"/>
+    </g>
+    <g id="five" fill="#ffffff">
+      <circle cx="3.9" r="0.45"/><circle cx="7.6" r="0.45"/><circle cx="11.3" r="0.45"/>
+      <circle cx="15" r="0.45"/><circle cx="18.7" r="0.45"/>
+    </g>
+  </defs>
+  <use href="#six" y="1.2"/><use href="#five" y="2.9"/>
+  <use href="#six" y="4.6"/><use href="#five" y="6.3"/>
+  <use href="#six" y="8"/><use href="#five" y="9.7"/>
+  <use href="#six" y="11.4"/><use href="#five" y="13.1"/>
+  <use href="#six" y="14.8"/>
+</svg>
