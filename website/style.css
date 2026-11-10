@@ -702,6 +702,22 @@ header {
     box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
+.media-item-wide {
+    grid-column: 1 / -1;
+}
+
+.media-item-wide img {
+    max-height: none;
+    object-fit: contain;
+}
+
+.media-item-wide video {
+    max-height: none;
+    aspect-ratio: 16 / 9;
+    object-fit: contain;
+    background: #000;
+}
+
 
 /* last section */
 .section-break {

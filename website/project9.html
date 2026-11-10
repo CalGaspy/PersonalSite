@@ -3,7 +3,7 @@
 <head>
   <meta charset="UTF-8" />
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>New Hardware Project | Gaspar Montoya</title>
+  <title>Edge vs. Cloud AI for Robotic Marker Placement | Gaspar Montoya</title>
   <link rel="stylesheet" href="style.css" />
   <link rel="icon" type="image/svg+xml" href="assets/favicon.svg" />
 </head>
@@ -18,50 +18,63 @@
 
   <main class="project-detail">
     <section class="project-header">
-      <h1>New Hardware Project</h1>
-      <p class="project-tags">Hardware • Add Technology</p>
+      <h1>Edge vs. Cloud AI for Robotic Marker Placement</h1>
+      <p class="project-tags">Jetson Orin Nano • Computer Vision • Robotic Arm</p>
     </section>
 
-    <!-- Replace these image paths with files from website/assets. Duplicate a media-item for more. -->
     <section class="project-media-gallery">
       <div class="gallery-grid">
-        <div class="media-item">
-          <img src="assets/project-placeholder.svg" alt="Placeholder for project image 1" />
-        </div>
-        <div class="media-item">
-          <img src="assets/project-placeholder.svg" alt="Placeholder for project image 2" />
-        </div>
-        <div class="media-item">
-          <img src="assets/project-placeholder.svg" alt="Placeholder for project image 3" />
-        </div>
-        <!-- Replace the video filenames below with your own MP4 files in website/assets. -->
-        <div class="media-item">
-          <video controls preload="none" poster="assets/project-placeholder.svg">
-            <source src="assets/project9-video-1.mp4" type="video/mp4" />
+        <div class="media-item media-item-wide">
+          <video controls playsinline preload="metadata" poster="assets/arm-marker-placement-poster.jpg"
+            aria-label="Robotic arm picking up and placing a blue marker">
+            <source src="assets/arm-marker-placement.mp4" type="video/mp4" />
             Your browser does not support the video tag.
           </video>
         </div>
         <div class="media-item">
-          <video controls preload="none" poster="assets/project-placeholder.svg">
-            <source src="assets/project9-video-2.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
+          <img src="assets/marker-detection.png" alt="Camera view with red, blue, and black markers detected" />
+        </div>
+        <div class="media-item">
+          <img src="assets/marker-targeting.png" alt="Taped placement box and selected landing targets in two test rounds" />
+        </div>
+        <div class="media-item media-item-wide">
+          <img src="assets/marker-placement-sequence.png" alt="Six stages of the robotic arm picking up and placing a blue marker" />
+        </div>
+        <div class="media-item media-item-wide">
+          <img src="assets/marker-command-times.png" alt="Bar chart of nine local command times ranging from about 27 to 44 seconds" />
         </div>
       </div>
     </section>
 
     <section class="project-description">
       <h2>Project Overview</h2>
-      <p>Describe the problem, what you designed and built, and the result in a few sentences.</p>
+      <p>I am testing whether onboard AI is good enough for a robot that picks up a requested
+        marker and places it inside a taped box. I connected pretrained NanoOWL detection and
+        NanoSAM segmentation with a RealSense depth camera, Jetson Orin Nano Super, and uArm
+        SwiftPro. Cloud processing is the next comparison; it has not been tested yet.</p>
 
       <h2>Key Features</h2>
       <ul>
-        <li>Add a key component or capability.</li>
-        <li>Add another feature or test result.</li>
+        <li>Text-requested marker detection and segmentation</li>
+        <li>Depth-based camera-to-arm calibration and placement</li>
+        <li>Onboard vision processing on a Jetson Orin Nano Super</li>
       </ul>
 
+      <h2>Local Results</h2>
+      <p>Nine commands completed across three rounds, averaging 31.0 seconds per command.
+        The camera confirmed six markers inside the box; three placements could not be verified.
+        This is an end-to-end time that includes arm movement, not model inference alone.
+        Camera-to-arm calibration had about 0.71 mm fitting RMS error and a 1.25 mm
+        maximum error across separate check positions.</p>
+
+      <h2>Next Step</h2>
+      <p>I plan to compare the local system with cloud vision processing using the same
+        scenes and arm settings, measuring task time, verified placements, and cost.</p>
+
       <h2>What I Learned</h2>
-      <p>Explain the tools you learned and one design or testing decision that mattered.</p>
+      <p>I learned to connect vision models, depth measurements, calibration, and arm control
+        in one workflow. Testing showed me why a completed command does not prove a successful
+        grasp, and why confirmed placements and total task time need separate measurements.</p>
     </section>
   </main>
 </body>
