@@ -65,7 +65,9 @@ header {
 .navbar .logo {
     display: flex;
     align-items: center;
-    gap: 0.5rem;
+    gap: 0.4rem;
+    flex-wrap: nowrap;
+    white-space: nowrap;
     color: #fff;
     font-size: 1.5rem;
     font-weight: bold;
@@ -73,20 +75,22 @@ header {
 
 .navbar .logo > img {
     width: auto;
-    height: 80px;
-    flex-shrink: 1;
+    height: 64px;
+    flex-shrink: 0;
 }
 
 .nav-flags {
     display: inline-flex;
     align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
     gap: 0.3rem;
     flex-shrink: 0;
 }
 
 .logo .nav-flags img {
     width: auto;
-    height: 22px;
+    height: 20px;
     border-radius: 2px;
 }
 
@@ -94,6 +98,8 @@ header {
     list-style: none;
     display: flex;
     gap: 1.5rem;
+    margin: 0;
+    padding: 0;
     color :#111827
 }
 
@@ -1099,6 +1105,25 @@ header {
   .LTSpice-entry,
   .media-wrapper {
     width: 100%;
+  }
+}
+
+@media (min-width: 769px) and (max-width: 980px) {
+  .navbar {
+    padding: 0.75rem 1rem;
+  }
+
+  .navbar .logo > img {
+    height: 50px;
+  }
+
+  .navbar .logo .nav-flags img {
+    height: 17px;
+  }
+
+  .nav-links {
+    gap: 0.75rem;
+    font-size: 0.9rem;
   }
 }
 
