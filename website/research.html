@@ -33,6 +33,77 @@
     <p>Embedded systems, robotics, and environmental sensing.</p>
   </section>
 
+  <!-- Quadruped LiDAR research -->
+  <section class="research-entry lidar-research">
+    <div class="lidar-overview">
+      <figure class="lidar-lead-image">
+        <img src="assets/go2_lidar_robot.png" alt="Unitree Go2 fitted with a LiDAR sensor" />
+        <figcaption></figcaption>
+      </figure>
+
+      <div class="lidar-overview-copy">
+        <div class="text-content">
+          <h2>Quadruped LiDAR Mapping for Wildfire Fuel Research</h2>
+          <p>UAV imagery misses lower branches needed to measure wildfire fuel. I built a
+            LiDAR mapping pipeline for a Unitree Go2 to scan shrubs from the ground and
+            estimate their height and volume. Preliminary checks put shrub height within
+            3 cm of tape measurements; volume estimates vary by method.</p>
+
+          <p><strong>What I Learned:</strong> I learned to use GLIM SLAM with LiDAR and IMU data
+            to build a point-cloud map, trace the robot's path, isolate shrubs from the terrain,
+            and check 3D measurements against tape references.</p>
+
+          <div class="research-tags">
+            <div class="lidar-tag-row">
+              <span class="tag">Unitree Go2</span>
+              <span class="tag">Quadruped</span>
+              <span class="tag">LiDAR</span>
+              <span class="tag">ROS 2</span>
+            </div>
+            <div class="lidar-tag-row">
+              <span class="tag">GLIM SLAM</span>
+              <span class="tag">Point Clouds</span>
+              <span class="tag">Wildfire Fuels</span>
+            </div>
+          </div>
+        </div>
+
+        <figure class="lidar-point-cloud">
+          <a href="assets/point_cloud_picture.png" target="_blank" rel="noopener" aria-label="Open LiDAR point-cloud views at full size">
+            <img src="assets/point_cloud_picture.png" alt="Two LiDAR point-cloud views of shrubs and terrain" loading="lazy" />
+          </a>
+        </figure>
+      </div>
+    </div>
+
+    <div class="lidar-gallery">
+      <figure>
+        <a href="assets/go2_lidar_volume_check.png" target="_blank" rel="noopener" aria-label="Open shrub volume comparison at full size">
+          <img src="assets/go2_lidar_volume_check.png" alt="Preliminary shrub height, dimensions, and volume compared with tape measurements" loading="lazy" />
+        </a>
+        <figcaption>Preliminary shrub dimensions and volume.</figcaption>
+      </figure>
+      <figure>
+        <a href="assets/go2_lidar_terrain_telemetry.png" target="_blank" rel="noopener" aria-label="Open robot trajectory and telemetry at full size">
+          <img src="assets/go2_lidar_terrain_telemetry.png" alt="Terrain map, robot trajectory, joint angles, and movement telemetry" loading="lazy" />
+        </a>
+        <figcaption>Terrain map, robot path, and telemetry.</figcaption>
+      </figure>
+      <figure>
+        <a href="assets/go2_lidar_survey_cloud.png" target="_blank" rel="noopener" aria-label="Open survey point cloud at full size">
+          <img src="assets/go2_lidar_survey_cloud.png" alt="Survey point cloud colored by height with robot trajectory" loading="lazy" />
+        </a>
+        <figcaption>Survey point cloud colored by height.</figcaption>
+      </figure>
+      <figure>
+        <a href="assets/go2_lidar_shrub_sections.png" target="_blank" rel="noopener" aria-label="Open shrub cross-sections at full size">
+          <img src="assets/go2_lidar_shrub_sections.png" alt="Shrub point-cloud top view and cross-sections with measurement bands" loading="lazy" />
+        </a>
+        <figcaption>Shrub cross-sections and measurement bands.</figcaption>
+      </figure>
+    </div>
+  </section>
+
    <!-- project 1 -->
      <section class="research-entry">
            
@@ -118,48 +189,5 @@
         </video>
       </div>
 </section>
-    
-    <!-- project 3 -->
-    <section class="research-entry">
-      <!-- FLOATED THUMBNAIL (beside text) -->
-      <div class="media-wrapper">
-        <img src="assets/scanner.jpg" alt="Main project image" />
-      </div>
-    
-    <div class="text-content">
-      <h2>Motorized 3-Axis Camera Gantry</h2>
-      <p>Imaging work needed repeatable camera movement across three axes. I built an
-        Ethernet-controlled gantry with stepper motors, linear rails, regulated power,
-        and limit switches. It moves the camera along X, Y, and Z while stopping before
-        the rails' physical limits.</p>
-
-        <p><strong>What I Learned:</strong> I learned to size a power supply for stepper motors,
-          organize their wiring with terminal blocks, and control movement over Ethernet.
-          Adding limit switches and custom acrylic strikers taught me to build safety
-          into the gantry's mechanical design.</p>
-          <div class="research-tags">
-        <span class="tag">StepEva3</span>
-        <span class="tag">Stepper Motors</span>
-        <span class="tag">C++</span>
-        <span class="tag">CAN Bus</span>
-        <span class="tag">Soldering</span>
-        <span class="tag">Designer</span>
-      </div>
-    </div>
-    <!-- project pic 1 -->
-    <div class="media-gallery">
-      <img src="assets/scanner3.jpg" alt="Build photo 2" />
-      <video controls>
-        <source src="assets/vidscan.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-
-      <video controls>
-        <source src="assets/scannervid.mp4" type="video/mp4">
-        Your browser does not support the video tag.
-      </video>
-      <img src="assets/scanner4.jpg" alt="Build photo 2" /> 
-    </div>
-      <!-- Next project -->
-        </div>
-  
+  </body>
+</html>
